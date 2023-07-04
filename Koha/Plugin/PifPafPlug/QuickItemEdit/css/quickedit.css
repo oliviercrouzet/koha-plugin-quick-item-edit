@@ -1,0 +1,77 @@
+#quickedit {
+    font-size: 1.1em;
+}
+#quickedit > h3 {
+    margin-left:20px;
+}
+fieldset.rows [type=text].addurl {
+    width:60%;
+}
+fieldset.rows {
+    float:none;
+    padding-bottom:30px;
+    padding-left:30px;
+    margin-left:50px;
+}
+[name=saveconfig] {
+    margin:63px 0 0 30px;
+}
+[name=saveconfig] ~ p {
+    clear:left;
+    margin-bottom: 30px;
+}
+#quickedit table {
+    float:left;
+    margin-left:30px;
+}
+fieldset.install {
+    font-size:100%;
+}
+#quickitem p {
+     border-left: 5px solid #ccc;
+     margin-left:3%;
+     padding-left:1%;
+}
+#quickitem h3 {
+    margin-left:10px;
+    margin-top:15px;
+}
+#quickitem h2 {
+    margin-left:20px;
+    margin-top:10px;
+    font-size:110%;
+}
+fieldset.rows label {
+    width:15em;
+}
+.searchbar {
+    width: 500px;
+    margin: 10px;
+}
+.engines {
+    margin-top:10px;
+    margin-left:10px;
+    max-width:200px;
+    vertical-align:inherit;
+}
+.engines:nth-child(2) {
+    max-width:120px;
+}
+.loupe {
+    width: 120px;
+}
+.loupe, .burger {
+    margin:10px 0 10px 10px;
+}
+.plus {
+   font-size:1.1em;
+}
+.ajoutbarre {
+    width: 250px;
+}
+.code {
+    background-color:#e8e8e8;
+    margin:5px 0 10px 30px;
+    padding:5px;
+    width:500px;
+}

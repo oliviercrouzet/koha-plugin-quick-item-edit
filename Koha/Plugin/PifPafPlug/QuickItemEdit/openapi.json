@@ -1,0 +1,41 @@
+{
+  "/opensearch_xml/{reftype}": {
+    "get": {
+      "x-mojo-to": "PifPafPlug::QuickItemEdit::Controller#get_opensearch_xml",
+      "operationId": "DownloadXml",
+      "parameters": [{
+        "name": "reftype",
+        "in": "path",
+        "description": "firefox opensearch plugin",
+        "required": true,
+        "type": "string"
+      }],
+      "produces": [
+        "application/opensearchdescription+xml"
+      ],
+      "responses": {
+        "200": {
+          "description": "A results XML"
+        },
+        "400": {
+          "description": "Bad request",
+                   "schema": {
+                        "type": "object",
+                        "properties": {
+                            "error": {
+                                "description": "An explanation for the error",
+                                "type": "string"
+                            }
+                        }
+                    }
+        },
+        "403": {
+          "description": "Permission denied"
+        },
+        "500": {
+          "description": "Internal server error"
+        }
+      }
+    }
+  }
+}

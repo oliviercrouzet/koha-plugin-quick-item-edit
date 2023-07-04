@@ -1,0 +1,26 @@
+[% INCLUDE 'doc-head-open.inc' %]
+ <title>Koha: QuickItemEdit Plugin: Configuration</title>
+[% INCLUDE 'doc-head-close.inc' %]
+<link rel="stylesheet" type="text/css" href="[% api_path %]/css/quickedit.css">
+<script type="text/JavaScript" language="JavaScript">
+$(document).ready(function(){
+$('[name=staffurl]').val(window.location.origin);
+$('[name=saveconfig]').click(function() {
+    if ( $('[name=staffurl]').val().match(/^https?:\/\/$/) ) {
+        alert("Error : Koha staff url not found");
+        return false;
+    }
+});
+});
+</script>
+</head>
+<body>
+[% INCLUDE 'header.inc' %]
+[% INCLUDE 'cat-search.inc' %]
+
+[% TRY %]
+    [% PROCESS "$PLUGIN_DIR/i18n/${LANG}/configure.inc" %]
+[% CATCH %]
+    [% PROCESS "$PLUGIN_DIR/i18n/en/configure.inc" %]
+[% END %]
+[% INCLUDE 'intranet-bottom.inc' %]

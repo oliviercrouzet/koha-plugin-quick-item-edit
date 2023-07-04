@@ -1,0 +1,22 @@
+[% INCLUDE 'doc-head-open.inc' %]
+ <title>QuickItemEdit Plugin</title>
+
+[% INCLUDE 'doc-head-close.inc' %]
+
+<link rel="stylesheet" type="text/css" href="[% api_path %]/css/quickedit.css">
+[% IF (staffurl) %]
+    <link rel="search" type="application/opensearchdescription+xml" title="[% itemlabel %]" href="[% staffurl %]/api/v1/contrib/quickitemedit/opensearch_xml/itemid">
+    <link rel="search" type="application/opensearchdescription+xml" title="[% opacbiblabel %]" href="[% staffurl %]/api/v1/contrib/quickitemedit/opensearch_xml/opacbib">
+    <link rel="search" type="application/opensearchdescription+xml" title="[% staffbiblabel %]" href="[% staffurl %]/api/v1/contrib/quickitemedit/opensearch_xml/staffbib">
+[% END %]
+
+</head>
+<body>
+[% INCLUDE 'header.inc' %]
+[% INCLUDE 'cat-search.inc' %]
+[% TRY %]
+    [% PROCESS "$PLUGIN_DIR/i18n/${LANG}/show_available_plugins.inc" %]
+[% CATCH %]
+    [% PROCESS "$PLUGIN_DIR/i18n/en/show_available_plugins.inc" %]
+[% END %]
+[% INCLUDE 'intranet-bottom.inc' %]

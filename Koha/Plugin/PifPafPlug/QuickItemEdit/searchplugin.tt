@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+ <InputEncoding>UTF-8</InputEncoding>
+ <ShortName>[% shortname | html %]</ShortName>
+ <Description>[% shortname | html %] made for Koha</Description>
+ <Url method="get" type="text/html" template="[% staffurl %]/cgi-bin/koha/plugins/run.pl?class=Koha::Plugin::PifPafPlug::QuickItemEdit&amp;method=tool&amp;[% reftype %]={searchTerms}"/>
+ <Image width="16" height="16" type="image/png">[% staffurl | url %][% api_path %]/icons/[% reftype %].png</Image>
+</OpenSearchDescription>
