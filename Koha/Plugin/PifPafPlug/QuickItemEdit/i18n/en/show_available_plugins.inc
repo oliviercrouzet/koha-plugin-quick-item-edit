@@ -6,9 +6,13 @@
     <h3>Fast editing of items using a Firefox search plugin</h3>
     <p>The Barcode, recordOPAC and recordSTAFF plugins,  allow for the former, to directly reach the form for editing an item from the barcode or stocknumber, for the others, to display a catalog record from its record number.</p>
     <h2>First installation</h2>
-    <p>You need Firefox's search bar.<br />
-    You can activate it from the burger on the right side of the toolbar :<br />
-     <img class="burger" src="[% api_path %]/images/burger.png"/><span class="plus"> + Settings/Search + </span><img class="ajoutbarre" src="[% api_path %]/images/ajoutbarre.png"/><br /> 
+    <p>You need Firefox's search bar:<br />
+    Right-click at the top of the browser and select <i>Customize Toolbar.</i><br />
+    Select the <i>Search</i> item (the one with the shaded area) :<br />
+    <img class="ajoutbarre" src="[% api_path %]/images/ajoutbarre.png"/><br />
+    Then drag and drop it to the right of the address bar.<br />
+    You will be able to adjust its width by placing the cursor between the 2 zones and moving it to the sides.<br />
+    Close the customization tab.<br /><br />
     The availability of a search plugin is indicated by a + sign in a green circle attached to the small magnifying glass.
     All you have to do is click it and add the plugin of your choice : <br /><img class="searchbar" src="[% api_path %]/images/searchbar.png"/><br />
     The plugin icon then becomes visible following the engines already installed. In case of doubt, his name appears on the mouse hover:<br />

@@ -12,7 +12,7 @@ use Koha::Items;
 use Mojo::JSON qw( decode_json encode_json );
 
 ## Here we set our plugin version
-our $VERSION = 1.0;
+our $VERSION = 1.1;
 
 ## Here is our metadata, some keys are required, some are optional
 our $metadata = {

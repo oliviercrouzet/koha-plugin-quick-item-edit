@@ -7,8 +7,12 @@
     <p>Les plugins Code-barre, NoticeOPAC et NoticePRO, permettent pour le premier, d'atteindre directement le formulaire d'édition d'un exemplaire à partir du code-barre ou numéro d'inventaire, pour les autres, d'afficher un notice du catalogue à partir de son numéro.</p>
     <h2>1ère installation</h2>
     <p>Vous avez besoin de la barre de recherche de Firefox.<br />
-    Vous pouvez l'activer à partir du burger situé à droite de la barre d'outils :<br />
-     <img class="burger" src="[% api_path %]/images/burger.png"/><span class="plus"> + Paramètres/Recherche + </span><img class="ajoutbarre" src="[% api_path %]/images/ajoutbarre.png"/><br />
+    Cliquez droit tout en haut du navigateur puis sur <i>Personnaliser la barre d'outils</i>.<br />
+    Choisissez l'élément <i>Rechercher</i> (celui dont la zone est grisée) :<br />
+    <img class="ajoutbarre" src="[% api_path %]/images/ajoutbarre.png"/><br />
+    Puis par glisser-déposer, amenez le à droite de la barre d'adresse.<br />
+    Vous pourrez régler sa largeur en posant le curseur entre les 2 zones et en le deplaçant sur les côtés.<br />
+    Refermez l'onglet de personnalisation.<br /><br />
     La disponibilité d'un plugin de recherche est signalée par un signe + dans un rond vert accolé à la petite loupe.
     Vous n'avez plus qu'à cliquer celle-ci et ajouter le plugin de votre choix :<br /><img class="searchbar" src="[% api_path %]/images/searchbar.png"/><br />
     L'icône du plugin devient alors visible à la suite des moteurs déja installés. En cas de doute, son nom apparait au survol de la souris:<br />

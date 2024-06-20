@@ -67,7 +67,8 @@ fieldset.rows label {
    font-size:1.1em;
 }
 .ajoutbarre {
-    width: 250px;
+    width: 240px;
+    margin:10px;
 }
 .code {
     background-color:#e8e8e8;
